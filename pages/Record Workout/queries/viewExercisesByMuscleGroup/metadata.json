@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "all_foods",
+    "name": "viewExercisesByMuscleGroup",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/f/foods"
+        "url": "web:4000/tw/viewExercises/{{ chooseMuscleGroup.selectedOptionValues }}"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Food",
+    "pageId": "Record Workout",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -36,18 +36,24 @@
         "apiContentType": "none"
       }
     },
-    "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "executeOnLoad": true,
+    "dynamicBindingPathList": [
+      {
+        "key": "datasourceUrl"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      " chooseMuscleGroup.selectedOptionValues "
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Food_all_foods",
+  "id": "Record Workout_viewExercisesByMuscleGroup",
   "deleted": false,
-  "gitSyncId": "643effb3022a640b686295b3_644046baa5bb07746698ce8b"
+  "gitSyncId": "643f01175020067e542bac94_6441b26f9f0b07156bb77c8c"
 }

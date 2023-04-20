@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "all_foods",
+    "name": "userWorkoutHistory",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/f/foods"
+        "url": "web:4000/wh/users-workout-history/1"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Food",
+    "pageId": "Track Meals",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -36,7 +36,7 @@
         "apiContentType": "none"
       }
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
@@ -47,7 +47,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Food_all_foods",
+  "id": "Track Meals_userWorkoutHistory",
   "deleted": false,
-  "gitSyncId": "643effb3022a640b686295b3_644046baa5bb07746698ce8b"
+  "gitSyncId": "643f01175020067e542bac94_64419dbe9f0b07156bb77c73"
 }
