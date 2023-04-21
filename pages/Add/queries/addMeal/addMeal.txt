@@ -1,0 +1,9 @@
+{
+  "TotalCalories" : 300,
+  "TotalFat" : 20,
+  "TotalProtein" : 20,
+  "TotalCarb" : 50,
+  "MealName" : "Chicken and Rice",
+  "DateCreated" : {{moment().format('YYYY-MM-DD')}},
+  "CreatorID" : {{viewSearchedUsers.selectedRow.UserID}}
+}
