@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1090,
+          "bottomRow": 1370,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -39,7 +39,7 @@
                 "group"
               ],
               "topRow": 3,
-              "bottomRow": 109,
+              "bottomRow": 137,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -60,7 +60,7 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 1060,
+                  "bottomRow": 1340,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -82,8 +82,8 @@
                         "parent",
                         "group"
                       ],
-                      "topRow": 24,
-                      "bottomRow": 34,
+                      "topRow": 52,
+                      "bottomRow": 62,
                       "parentRowSpace": 10,
                       "type": "CONTAINER_WIDGET",
                       "hideCard": false,
@@ -147,7 +147,7 @@
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "User Goals",
+                              "text": "User Goal: ",
                               "key": "brjcrv1x4u",
                               "isDeprecated": false,
                               "rightColumn": 15,
@@ -163,8 +163,10 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "responsiveBehavior": "fill",
+                              "originalTopRow": 0,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
+                              "originalBottomRow": 4,
                               "fontSize": "1rem",
                               "minDynamicHeight": 4
                             }
@@ -200,10 +202,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 24,
+                      "originalTopRow": 53,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 34,
+                      "originalBottomRow": 63,
                       "minDynamicHeight": 10
                     },
                     {
@@ -239,7 +241,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "HOME",
+                      "text": "HealthBase",
                       "key": "brjcrv1x4u",
                       "isDeprecated": false,
                       "rightColumn": 63,
@@ -274,8 +276,8 @@
                         "parent",
                         "group"
                       ],
-                      "topRow": 34,
-                      "bottomRow": 69,
+                      "topRow": 62,
+                      "bottomRow": 97,
                       "parentRowSpace": 10,
                       "type": "CONTAINER_WIDGET",
                       "hideCard": false,
@@ -372,27 +374,6 @@
                               "animateLoading": true,
                               "dynamicBindingPathList": [
                                 {
-                                  "key": "primaryColumns.step.computedValue"
-                                },
-                                {
-                                  "key": "primaryColumns.task.computedValue"
-                                },
-                                {
-                                  "key": "primaryColumns.status.computedValue"
-                                },
-                                {
-                                  "key": "primaryColumns.action.computedValue"
-                                },
-                                {
-                                  "key": "primaryColumns.action.buttonColor"
-                                },
-                                {
-                                  "key": "primaryColumns.action.borderRadius"
-                                },
-                                {
-                                  "key": "primaryColumns.action.boxShadow"
-                                },
-                                {
                                   "key": "accentColor"
                                 },
                                 {
@@ -400,6 +381,21 @@
                                 },
                                 {
                                   "key": "boxShadow"
+                                },
+                                {
+                                  "key": "primaryColumns.NumWeeks.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.PlanDescription.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.PlanName.computedValue"
+                                },
+                                {
+                                  "key": "tableData"
+                                },
+                                {
+                                  "key": "primaryColumns.WorkoutPlanID.computedValue"
                                 }
                               ],
                               "needsHeightForContent": true,
@@ -437,17 +433,17 @@
                                 }
                               },
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "columnUpdatedAt": 1681943712167,
+                              "columnUpdatedAt": 1682040112416,
                               "defaultSelectedRowIndices": [
                                 0
                               ],
                               "widgetName": "Table1",
                               "defaultPageSize": 0,
                               "columnOrder": [
-                                "step",
-                                "task",
-                                "status",
-                                "action"
+                                "PlanName",
+                                "PlanDescription",
+                                "NumWeeks",
+                                "WorkoutPlanID"
                               ],
                               "dynamicPropertyPathList": [],
                               "displayName": "Table",
@@ -455,105 +451,131 @@
                               "columnWidthMap": {
                                 "task": 245,
                                 "step": 70,
-                                "status": 85
+                                "status": 85,
+                                "PlanDescription": 314,
+                                "PlanName": 200
                               },
                               "parentRowSpace": 10,
                               "hideCard": false,
                               "parentColumnSpace": 13.966796875,
+                              "dynamicTriggerPathList": [],
                               "borderWidth": "1",
                               "primaryColumns": {
-                                "step": {
+                                "NumWeeks": {
+                                  "allowCellWrapping": false,
                                   "index": 0,
                                   "width": 150,
-                                  "id": "step",
-                                  "originalId": "step",
-                                  "alias": "step",
+                                  "originalId": "NumWeeks",
+                                  "id": "NumWeeks",
+                                  "alias": "NumWeeks",
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
-                                  "columnType": "text",
+                                  "columnType": "number",
+                                  "textColor": "",
                                   "textSize": "0.875rem",
+                                  "fontStyle": "",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": true,
-                                  "isCellVisible": true,
+                                  "isDisabled": false,
                                   "isCellEditable": false,
+                                  "isEditable": false,
+                                  "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "step",
-                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"step\"]))}}",
-                                  "validation": {},
+                                  "label": "NumWeeks",
+                                  "isSaveVisible": true,
+                                  "isDiscardVisible": true,
+                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"NumWeeks\"]))}}",
                                   "sticky": "",
-                                  "labelColor": "#FFFFFF"
+                                  "validation": {},
+                                  "cellBackground": ""
                                 },
-                                "task": {
+                                "PlanDescription": {
+                                  "allowCellWrapping": false,
                                   "index": 1,
                                   "width": 150,
-                                  "id": "task",
-                                  "originalId": "task",
-                                  "alias": "task",
+                                  "originalId": "PlanDescription",
+                                  "id": "PlanDescription",
+                                  "alias": "PlanDescription",
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
+                                  "textColor": "",
                                   "textSize": "0.875rem",
+                                  "fontStyle": "",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": true,
-                                  "isCellVisible": true,
+                                  "isDisabled": false,
                                   "isCellEditable": false,
+                                  "isEditable": false,
+                                  "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "task",
-                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"task\"]))}}",
-                                  "validation": {},
+                                  "label": "PlanDescription",
+                                  "isSaveVisible": true,
+                                  "isDiscardVisible": true,
+                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"PlanDescription\"]))}}",
                                   "sticky": "",
-                                  "labelColor": "#FFFFFF"
+                                  "validation": {},
+                                  "cellBackground": ""
                                 },
-                                "status": {
+                                "PlanName": {
+                                  "allowCellWrapping": false,
                                   "index": 2,
                                   "width": 150,
-                                  "id": "status",
-                                  "originalId": "status",
-                                  "alias": "status",
+                                  "originalId": "PlanName",
+                                  "id": "PlanName",
+                                  "alias": "PlanName",
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
+                                  "textColor": "",
                                   "textSize": "0.875rem",
+                                  "fontStyle": "",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": true,
-                                  "isCellVisible": true,
+                                  "isDisabled": false,
                                   "isCellEditable": false,
+                                  "isEditable": false,
+                                  "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "status",
-                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
-                                  "validation": {},
+                                  "label": "PlanName",
+                                  "isSaveVisible": true,
+                                  "isDiscardVisible": true,
+                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"PlanName\"]))}}",
                                   "sticky": "",
-                                  "labelColor": "#FFFFFF"
+                                  "validation": {},
+                                  "cellBackground": ""
                                 },
-                                "action": {
+                                "WorkoutPlanID": {
+                                  "allowCellWrapping": false,
                                   "index": 3,
                                   "width": 150,
-                                  "id": "action",
-                                  "originalId": "action",
-                                  "alias": "action",
+                                  "originalId": "WorkoutPlanID",
+                                  "id": "WorkoutPlanID",
+                                  "alias": "WorkoutPlanID",
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
-                                  "columnType": "button",
+                                  "columnType": "number",
+                                  "textColor": "",
                                   "textSize": "0.875rem",
+                                  "fontStyle": "",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": true,
-                                  "isCellVisible": true,
-                                  "isCellEditable": false,
                                   "isDisabled": false,
+                                  "isCellEditable": false,
+                                  "isEditable": false,
+                                  "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "action",
-                                  "onClick": "{{currentRow.step === '#1' ? showAlert('Done', 'success') : currentRow.step === '#2' ? navigateTo('https://docs.appsmith.com/core-concepts/connecting-to-data-sources/querying-a-database',undefined,'NEW_WINDOW') : navigateTo('https://docs.appsmith.com/core-concepts/displaying-data-read/display-data-tables',undefined,'NEW_WINDOW')}}",
-                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"action\"]))}}",
-                                  "validation": {},
+                                  "label": "WorkoutPlanID",
+                                  "isSaveVisible": true,
+                                  "isDiscardVisible": true,
+                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"WorkoutPlanID\"]))}}",
                                   "sticky": "",
-                                  "labelColor": "#FFFFFF",
-                                  "buttonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
-                                  "borderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-                                  "boxShadow": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}"
+                                  "validation": {},
+                                  "cellBackground": ""
                                 }
                               },
                               "key": "ouexosn6q8",
@@ -563,26 +585,7 @@
                               "textSize": "0.875rem",
                               "widgetId": "qt54losp1w",
                               "minWidth": 450,
-                              "tableData": [
-                                {
-                                  "step": "#1",
-                                  "task": "Drop a table",
-                                  "status": "✅",
-                                  "action": ""
-                                },
-                                {
-                                  "step": "#2",
-                                  "task": "Create a query fetch_users with the Mock DB",
-                                  "status": "--",
-                                  "action": ""
-                                },
-                                {
-                                  "step": "#3",
-                                  "task": "Bind the query using => fetch_users.data",
-                                  "status": "--",
-                                  "action": ""
-                                }
-                              ],
+                              "tableData": "{{getUserWorkoutPlans.data}}",
                               "label": "Data",
                               "searchKey": "",
                               "parentId": "mmmnrdn0lu",
@@ -625,10 +628,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 34,
+                      "originalTopRow": 63,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 69,
+                      "originalBottomRow": 98,
                       "minDynamicHeight": 10
                     },
                     {
@@ -643,8 +646,8 @@
                         "parent",
                         "group"
                       ],
-                      "topRow": 69,
-                      "bottomRow": 104,
+                      "topRow": 97,
+                      "bottomRow": 132,
                       "parentRowSpace": 10,
                       "type": "CONTAINER_WIDGET",
                       "hideCard": false,
@@ -996,10 +999,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 69,
+                      "originalTopRow": 98,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 104,
+                      "originalBottomRow": 133,
                       "minDynamicHeight": 10
                     },
                     {
@@ -1015,7 +1018,7 @@
                         "group"
                       ],
                       "topRow": 9,
-                      "bottomRow": 24,
+                      "bottomRow": 52,
                       "parentRowSpace": 10,
                       "type": "CONTAINER_WIDGET",
                       "hideCard": false,
@@ -1036,7 +1039,7 @@
                           "widgetName": "Canvas4",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 150,
+                          "bottomRow": 430,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -1048,25 +1051,11 @@
                           "children": [
                             {
                               "boxShadow": "none",
-                              "widgetName": "firstName",
-                              "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "searchTags": [
-                                "form",
-                                "text input",
-                                "number",
-                                "textarea"
-                              ],
                               "topRow": 0,
-                              "bottomRow": 7,
-                              "parentRowSpace": 10,
                               "labelWidth": 5,
-                              "autoFocus": false,
                               "type": "INPUT_WIDGET_V2",
-                              "hideCard": false,
                               "animateLoading": true,
-                              "parentColumnSpace": 14.279296875,
-                              "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 1,
                               "dynamicBindingPathList": [
@@ -1077,57 +1066,62 @@
                                   "key": "borderRadius"
                                 }
                               ],
-                              "labelPosition": "Top",
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": false,
-                              "key": "rmr43wcbcm",
-                              "labelTextSize": "0.875rem",
                               "isRequired": false,
-                              "isDeprecated": false,
-                              "rightColumn": 12,
                               "dynamicHeight": "FIXED",
-                              "widgetId": "3duaguubce",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "showStepArrows": false,
-                              "minWidth": 450,
                               "isVisible": true,
-                              "label": "First Name:",
                               "version": 2,
-                              "parentId": "9tseg0vfqx",
-                              "labelAlignment": "left",
-                              "renderMode": "CANVAS",
                               "isLoading": false,
-                              "responsiveBehavior": "fill",
-                              "originalTopRow": 17,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "maxDynamicHeight": 9000,
                               "originalBottomRow": 24,
-                              "iconAlign": "left",
-                              "defaultText": "",
-                              "minDynamicHeight": 4
-                            },
-                            {
-                              "boxShadow": "none",
-                              "widgetName": "lastName",
+                              "widgetName": "firstName",
                               "displayName": "Input",
-                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                               "searchTags": [
                                 "form",
                                 "text input",
                                 "number",
                                 "textarea"
                               ],
-                              "topRow": 0,
                               "bottomRow": 7,
                               "parentRowSpace": 10,
-                              "labelWidth": 5,
                               "autoFocus": false,
-                              "type": "INPUT_WIDGET_V2",
                               "hideCard": false,
-                              "animateLoading": true,
                               "parentColumnSpace": 14.279296875,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onTextChanged"
+                                }
+                              ],
+                              "labelPosition": "Top",
+                              "key": "rmr43wcbcm",
+                              "labelTextSize": "0.875rem",
+                              "onTextChanged": "{{viewUsers.run()}}",
+                              "isDeprecated": false,
+                              "rightColumn": 12,
+                              "widgetId": "3duaguubce",
+                              "minWidth": 450,
+                              "label": "First Name:",
+                              "parentId": "9tseg0vfqx",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "responsiveBehavior": "fill",
+                              "originalTopRow": 17,
+                              "maxDynamicHeight": 9000,
+                              "iconAlign": "left",
+                              "defaultText": "",
+                              "minDynamicHeight": 4
+                            },
+                            {
+                              "boxShadow": "none",
+                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                              "topRow": 0,
+                              "labelWidth": 5,
+                              "type": "INPUT_WIDGET_V2",
+                              "animateLoading": true,
                               "resetOnSubmit": true,
                               "leftColumn": 14,
                               "dynamicBindingPathList": [
@@ -1138,215 +1132,52 @@
                                   "key": "borderRadius"
                                 }
                               ],
-                              "labelPosition": "Top",
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": false,
+                              "validation": "",
+                              "isRequired": false,
+                              "dynamicHeight": "FIXED",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "showStepArrows": false,
+                              "isVisible": true,
+                              "version": 2,
+                              "isLoading": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "originalBottomRow": 24,
+                              "widgetName": "lastName",
+                              "displayName": "Input",
+                              "searchTags": [
+                                "form",
+                                "text input",
+                                "number",
+                                "textarea"
+                              ],
+                              "bottomRow": 7,
+                              "parentRowSpace": 10,
+                              "autoFocus": false,
+                              "hideCard": false,
+                              "parentColumnSpace": 14.279296875,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onTextChanged"
+                                }
+                              ],
+                              "labelPosition": "Top",
                               "key": "rmr43wcbcm",
                               "labelTextSize": "0.875rem",
-                              "isRequired": false,
+                              "onTextChanged": "{{viewUsers.run()}}",
                               "isDeprecated": false,
                               "rightColumn": 34,
-                              "dynamicHeight": "FIXED",
                               "widgetId": "7jsz2gvv92",
-                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "showStepArrows": false,
                               "minWidth": 450,
-                              "isVisible": true,
                               "label": "Last Name:",
-                              "version": 2,
                               "parentId": "9tseg0vfqx",
                               "labelAlignment": "left",
                               "renderMode": "CANVAS",
-                              "isLoading": false,
                               "responsiveBehavior": "fill",
                               "originalTopRow": 17,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 24,
-                              "iconAlign": "left",
-                              "defaultText": "",
-                              "minDynamicHeight": 4
-                            },
-                            {
-                              "boxShadow": "none",
-                              "widgetName": "age",
-                              "displayName": "Input",
-                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "searchTags": [
-                                "form",
-                                "text input",
-                                "number",
-                                "textarea"
-                              ],
-                              "topRow": 0,
-                              "bottomRow": 7,
-                              "parentRowSpace": 10,
-                              "labelWidth": 5,
-                              "autoFocus": false,
-                              "type": "INPUT_WIDGET_V2",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "parentColumnSpace": 14.279296875,
-                              "dynamicTriggerPathList": [],
-                              "resetOnSubmit": true,
-                              "leftColumn": 36,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "accentColor"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
-                              "labelPosition": "Top",
-                              "labelStyle": "",
-                              "inputType": "TEXT",
-                              "isDisabled": false,
-                              "key": "rmr43wcbcm",
-                              "labelTextSize": "0.875rem",
-                              "isRequired": false,
-                              "isDeprecated": false,
-                              "rightColumn": 41,
-                              "dynamicHeight": "FIXED",
-                              "widgetId": "gvtmql5nru",
-                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "showStepArrows": false,
-                              "minWidth": 450,
-                              "isVisible": true,
-                              "label": "Age:",
-                              "version": 2,
-                              "parentId": "9tseg0vfqx",
-                              "labelAlignment": "left",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "responsiveBehavior": "fill",
-                              "originalTopRow": 17,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "maxDynamicHeight": 9000,
-                              "originalBottomRow": 24,
-                              "iconAlign": "left",
-                              "defaultText": "",
-                              "minDynamicHeight": 4
-                            },
-                            {
-                              "boxShadow": "none",
-                              "widgetName": "height",
-                              "displayName": "Input",
-                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "searchTags": [
-                                "form",
-                                "text input",
-                                "number",
-                                "textarea"
-                              ],
-                              "topRow": 0,
-                              "bottomRow": 7,
-                              "parentRowSpace": 10,
-                              "labelWidth": 5,
-                              "autoFocus": false,
-                              "type": "INPUT_WIDGET_V2",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "parentColumnSpace": 14.279296875,
-                              "dynamicTriggerPathList": [],
-                              "resetOnSubmit": true,
-                              "leftColumn": 44,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "accentColor"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
-                              "labelPosition": "Top",
-                              "labelStyle": "",
-                              "inputType": "TEXT",
-                              "isDisabled": false,
-                              "key": "rmr43wcbcm",
-                              "labelTextSize": "0.875rem",
-                              "isRequired": false,
-                              "isDeprecated": false,
-                              "rightColumn": 52,
-                              "dynamicHeight": "FIXED",
-                              "widgetId": "lylxihhiop",
-                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "showStepArrows": false,
-                              "minWidth": 450,
-                              "isVisible": true,
-                              "label": "Height (in)",
-                              "version": 2,
-                              "parentId": "9tseg0vfqx",
-                              "labelAlignment": "left",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "responsiveBehavior": "fill",
-                              "originalTopRow": 17,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "maxDynamicHeight": 9000,
-                              "originalBottomRow": 24,
-                              "iconAlign": "left",
-                              "defaultText": "",
-                              "minDynamicHeight": 4
-                            },
-                            {
-                              "boxShadow": "none",
-                              "widgetName": "weight",
-                              "displayName": "Input",
-                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "searchTags": [
-                                "form",
-                                "text input",
-                                "number",
-                                "textarea"
-                              ],
-                              "topRow": 0,
-                              "bottomRow": 7,
-                              "parentRowSpace": 10,
-                              "labelWidth": 5,
-                              "autoFocus": false,
-                              "type": "INPUT_WIDGET_V2",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "parentColumnSpace": 14.279296875,
-                              "dynamicTriggerPathList": [],
-                              "resetOnSubmit": true,
-                              "leftColumn": 53,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "accentColor"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
-                              "labelPosition": "Top",
-                              "labelStyle": "",
-                              "inputType": "TEXT",
-                              "isDisabled": false,
-                              "key": "rmr43wcbcm",
-                              "labelTextSize": "0.875rem",
-                              "isRequired": false,
-                              "isDeprecated": false,
-                              "rightColumn": 62,
-                              "dynamicHeight": "FIXED",
-                              "widgetId": "5o5jk77vos",
-                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "showStepArrows": false,
-                              "minWidth": 450,
-                              "isVisible": true,
-                              "label": "Weight (lbs)",
-                              "version": 2,
-                              "parentId": "9tseg0vfqx",
-                              "labelAlignment": "left",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "responsiveBehavior": "fill",
-                              "originalTopRow": 17,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "maxDynamicHeight": 9000,
-                              "originalBottomRow": 24,
                               "iconAlign": "left",
                               "defaultText": "",
                               "minDynamicHeight": 4
@@ -1355,6 +1186,7 @@
                               "resetFormOnClick": false,
                               "boxShadow": "none",
                               "widgetName": "Button1",
+                              "onClick": "{{viewAllGoals.run(() => getUserWorkoutPlans.run(), () => {})}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -1362,14 +1194,18 @@
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 9,
-                              "bottomRow": 13,
+                              "topRow": 37,
+                              "bottomRow": 41,
                               "parentRowSpace": 10,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 13.743682861328125,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "leftColumn": 1,
                               "dynamicBindingPathList": [
                                 {
@@ -1379,11 +1215,11 @@
                                   "key": "borderRadius"
                                 }
                               ],
-                              "text": "Search",
+                              "text": "See their HealthBase",
                               "isDisabled": false,
                               "key": "rtk91553i8",
                               "isDeprecated": false,
-                              "rightColumn": 12,
+                              "rightColumn": 23,
                               "isDefaultClickDisabled": true,
                               "widgetId": "mbkqxnuf7a",
                               "minWidth": 120,
@@ -1398,6 +1234,201 @@
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "buttonVariant": "PRIMARY",
                               "placement": "CENTER"
+                            },
+                            {
+                              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                              "borderColor": "#E0DEDE",
+                              "isVisibleDownload": true,
+                              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+                              "topRow": 8,
+                              "isSortable": true,
+                              "type": "TABLE_WIDGET_V2",
+                              "inlineEditingSaveOption": "ROW_LEVEL",
+                              "animateLoading": true,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "boxShadow"
+                                },
+                                {
+                                  "key": "tableData"
+                                },
+                                {
+                                  "key": "primaryColumns.FirstName.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.LastName.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.UserID.computedValue"
+                                }
+                              ],
+                              "needsHeightForContent": true,
+                              "leftColumn": 1,
+                              "delimiter": ",",
+                              "defaultSelectedRowIndex": 0,
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "isVisibleFilters": true,
+                              "isVisible": true,
+                              "enableClientSideSearch": true,
+                              "version": 1,
+                              "totalRecordsCount": 0,
+                              "isLoading": false,
+                              "childStylesheet": {
+                                "button": {
+                                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                  "boxShadow": "none"
+                                },
+                                "menuButton": {
+                                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                  "boxShadow": "none"
+                                },
+                                "iconButton": {
+                                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                  "boxShadow": "none"
+                                },
+                                "editActions": {
+                                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                                }
+                              },
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "columnUpdatedAt": 1682039724496,
+                              "defaultSelectedRowIndices": [
+                                0
+                              ],
+                              "widgetName": "viewSearchedUsers",
+                              "defaultPageSize": 0,
+                              "columnOrder": [
+                                "UserID",
+                                "FirstName",
+                                "LastName"
+                              ],
+                              "dynamicPropertyPathList": [],
+                              "displayName": "Table",
+                              "bottomRow": 36,
+                              "columnWidthMap": {
+                                "task": 245,
+                                "step": 70,
+                                "status": 85
+                              },
+                              "parentRowSpace": 10,
+                              "hideCard": false,
+                              "parentColumnSpace": 13.966796875,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onRowSelected"
+                                }
+                              ],
+                              "borderWidth": "1",
+                              "primaryColumns": {
+                                "FirstName": {
+                                  "allowCellWrapping": false,
+                                  "index": 0,
+                                  "width": 150,
+                                  "originalId": "FirstName",
+                                  "id": "FirstName",
+                                  "alias": "FirstName",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textSize": "0.875rem",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellEditable": false,
+                                  "isEditable": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "FirstName",
+                                  "isSaveVisible": true,
+                                  "isDiscardVisible": true,
+                                  "computedValue": "{{viewSearchedUsers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"FirstName\"]))}}",
+                                  "sticky": "",
+                                  "validation": {}
+                                },
+                                "LastName": {
+                                  "allowCellWrapping": false,
+                                  "index": 1,
+                                  "width": 150,
+                                  "originalId": "LastName",
+                                  "id": "LastName",
+                                  "alias": "LastName",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textSize": "0.875rem",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellEditable": false,
+                                  "isEditable": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "LastName",
+                                  "isSaveVisible": true,
+                                  "isDiscardVisible": true,
+                                  "computedValue": "{{viewSearchedUsers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"LastName\"]))}}",
+                                  "sticky": "",
+                                  "validation": {}
+                                },
+                                "UserID": {
+                                  "allowCellWrapping": false,
+                                  "index": 2,
+                                  "width": 150,
+                                  "originalId": "UserID",
+                                  "id": "UserID",
+                                  "alias": "UserID",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "number",
+                                  "textSize": "0.875rem",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellEditable": false,
+                                  "isEditable": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "UserID",
+                                  "isSaveVisible": true,
+                                  "isDiscardVisible": true,
+                                  "computedValue": "{{viewSearchedUsers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"UserID\"]))}}",
+                                  "sticky": "",
+                                  "validation": {}
+                                }
+                              },
+                              "onRowSelected": "{{getUserWorkoutPlans.run()}}",
+                              "key": "ouexosn6q8",
+                              "canFreezeColumn": true,
+                              "isDeprecated": false,
+                              "rightColumn": 34,
+                              "textSize": "0.875rem",
+                              "widgetId": "61kewpdy73",
+                              "minWidth": 450,
+                              "tableData": "{{viewUsers.data}}",
+                              "label": "Data",
+                              "searchKey": "",
+                              "parentId": "9tseg0vfqx",
+                              "renderMode": "CANVAS",
+                              "horizontalAlignment": "LEFT",
+                              "isVisibleSearch": true,
+                              "responsiveBehavior": "fill",
+                              "isVisiblePagination": true,
+                              "verticalAlignment": "CENTER"
                             }
                           ],
                           "key": "qs4kyxlble",
@@ -1434,7 +1465,7 @@
                       "originalTopRow": 9,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 24,
+                      "originalBottomRow": 53,
                       "minDynamicHeight": 10
                     }
                   ],
@@ -1472,12 +1503,36 @@
               "originalTopRow": 3,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 109,
+              "originalBottomRow": 138,
               "minDynamicHeight": 10
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Home_getUserWorkoutPlans",
+              "name": "getUserWorkoutPlans",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "viewSearchedUsers.selectedRow.UserID"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Home_viewUsers",
+              "name": "viewUsers",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "firstName.text",
+                "lastName.text"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Home",
