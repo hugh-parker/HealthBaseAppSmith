@@ -800,7 +800,7 @@
                                         "group"
                                       ],
                                       "topRow": 1,
-                                      "bottomRow": 15,
+                                      "bottomRow": 14,
                                       "parentRowSpace": 10,
                                       "type": "CONTAINER_WIDGET",
                                       "hideCard": false,
@@ -821,7 +821,7 @@
                                           "widgetName": "Canvas4",
                                           "displayName": "Canvas",
                                           "topRow": 0,
-                                          "bottomRow": 140,
+                                          "bottomRow": 130,
                                           "parentRowSpace": 1,
                                           "type": "CANVAS_WIDGET",
                                           "canExtend": false,
@@ -841,7 +841,7 @@
                                                 "label"
                                               ],
                                               "topRow": 0,
-                                              "bottomRow": 5,
+                                              "bottomRow": 4,
                                               "parentRowSpace": 10,
                                               "type": "TEXT_WIDGET",
                                               "hideCard": false,
@@ -897,8 +897,8 @@
                                               "searchTags": [
                                                 "dropdown"
                                               ],
-                                              "topRow": 5,
-                                              "bottomRow": 12,
+                                              "topRow": 4,
+                                              "bottomRow": 11,
                                               "parentRowSpace": 10,
                                               "labelWidth": 5,
                                               "type": "SELECT_WIDGET",
@@ -1510,7 +1510,7 @@
                                       "resetFormOnClick": false,
                                       "boxShadow": "none",
                                       "widgetName": "Button1",
-                                      "onClick": "{{addExercisePlan.run(() => showAlert('Added ' + chooseExercise + ' to ' + workoutName.text), () => showAlert('Failed to add ' + chooseExercise.selectedOptionLabel + ' to ' + workoutName.text,'error'))}}",
+                                      "onClick": "{{addExercisePlan.run(() => showAlert('Success'), () => {})}}",
                                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                                       "displayName": "Button",
                                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -1572,8 +1572,8 @@
                                         "click",
                                         "submit"
                                       ],
-                                      "topRow": 16,
-                                      "bottomRow": 20,
+                                      "topRow": 15,
+                                      "bottomRow": 19,
                                       "parentRowSpace": 10,
                                       "type": "BUTTON_WIDGET",
                                       "hideCard": false,
@@ -1700,7 +1700,7 @@
                               "originalTopRow": 1,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 9,
+                              "originalBottomRow": 6,
                               "fontSize": "1.875rem",
                               "minDynamicHeight": 4
                             }
