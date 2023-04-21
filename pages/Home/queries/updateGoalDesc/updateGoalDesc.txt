@@ -1,0 +1,5 @@
+{
+  "GoalID": {{goalDisplay.selectedRow.GoalID}},
+  "GoalName": {{goalDisplay.selectedRow.GoalName}},
+  "GoalDesc": {{goalUpdate.inputText}},
+}

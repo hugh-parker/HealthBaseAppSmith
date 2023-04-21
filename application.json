@@ -5,26 +5,6 @@
       "isDefault": true
     },
     {
-      "id": "Track Workouts",
-      "isDefault": false
-    },
-    {
-      "id": "Record Workout",
-      "isDefault": false
-    },
-    {
-      "id": "Track Meals",
-      "isDefault": false
-    },
-    {
-      "id": "Record Meal",
-      "isDefault": false
-    },
-    {
-      "id": "Workout Database",
-      "isDefault": false
-    },
-    {
       "id": "Add",
       "isDefault": false
     }

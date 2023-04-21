@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n  \"TotalCalories\" : 300,\n  \"TotalFat\" : 20,\n  \"TotalProtein\" : 20,\n  \"TotalCarb\" : 50,\n  \"MealName\" : \"Chicken and Rice\",\n  \"DateCreated\" : {{moment().format('YYYY-MM-DD')}},\n  \"CreatorID\" : {{viewSearchedUsers.selectedRow.UserID}}\n}",
+      "body": "{\n  \"TotalCalories\" : {{mealCalories.inputText}},\n\t\"TotalFat\" : {{mealFat.inputText}},\n  \"TotalProtein\" : {{mealProtein.inputText}},\n  \"TotalCarb\" : {{mealCarbs.inputText}},\n  \"MealName\" : \"{{mealName.inputText}}\",\n  \"DateCreated\" : {{moment().format('YYYY-MM-DD')}},\n  \"CreatorID\" : {{mealUserID.inputText}}\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -52,8 +52,13 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "moment().format('YYYY-MM-DD')",
-      "viewSearchedUsers.selectedRow.UserID"
+      "mealCalories.inputText",
+      "mealCarbs.inputText",
+      "mealFat.inputText",
+      "mealName.inputText",
+      "mealProtein.inputText",
+      "mealUserID.inputText",
+      "moment().format('YYYY-MM-DD')"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

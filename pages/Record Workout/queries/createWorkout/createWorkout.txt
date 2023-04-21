@@ -1,6 +1,0 @@
-{
-  "WorkoutName" : {{workoutName.text}},
-  "WorkoutDesc" : {{workoutDescription.inputText}},
-  "DateCreated" : {{moment().format('YYYY-MM-DD')}},
-  "CreatorID" : 4
-}

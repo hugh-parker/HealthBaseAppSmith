@@ -1,9 +1,0 @@
-{
-  "WorkoutID" : {{mostRecentWorkout.data.WorkoutID}},
-  "ExercisePlanID" : {{most,
-}
-
-
-
-insert exerciseplan
-insert {{mostRecentWorkout.data.WorkoutID}}
