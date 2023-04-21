@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "myFun1",
-    "fullyQualifiedName": "nameSplit.myFun1",
+    "name": "myFun2",
+    "fullyQualifiedName": "JSObject1.myFun2",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,14 +14,14 @@
       "userPermissions": []
     },
     "pageId": "Home",
-    "collectionId": "Home_nameSplit",
+    "collectionId": "Home_JSObject1",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": false
+      "isAsync": true
     },
     "executeOnLoad": false,
     "clientSideExecution": true,
@@ -38,7 +38,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Home_nameSplit.myFun1",
+  "id": "Home_JSObject1.myFun2",
   "deleted": false,
-  "gitSyncId": "643f01175020067e542bac94_6441e05c9f0b07156bb77cc5"
+  "gitSyncId": "643f01175020067e542bac94_6441e8359f0b07156bb77cdf"
 }

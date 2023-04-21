@@ -15,7 +15,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Record Workout",
+    "pageId": "Add",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -52,7 +52,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Record Workout_addExerciseToWorkout",
+  "id": "Add_addExerciseToWorkout",
   "deleted": false,
-  "gitSyncId": "643f01175020067e542bac94_6441d69e9f0b07156bb77cb7"
+  "gitSyncId": "643f01175020067e542bac94_6441ed349f0b07156bb77cf9"
 }

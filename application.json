@@ -23,6 +23,10 @@
     {
       "id": "Workout Database",
       "isDefault": false
+    },
+    {
+      "id": "Add",
+      "isDefault": false
     }
   ],
   "viewMode": false,

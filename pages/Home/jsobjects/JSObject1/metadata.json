@@ -1,6 +1,6 @@
 {
   "unpublishedCollection": {
-    "name": "nameSplit",
+    "name": "JSObject1",
     "pageId": "Home",
     "pluginId": "js-plugin",
     "pluginType": "JS",
@@ -18,7 +18,7 @@
     ],
     "userPermissions": []
   },
-  "id": "Home_nameSplit",
+  "id": "Home_JSObject1",
   "deleted": false,
-  "gitSyncId": "643f01175020067e542bac94_6441e05c9f0b07156bb77cc9"
+  "gitSyncId": "643f01175020067e542bac94_6441e8359f0b07156bb77ce2"
 }
