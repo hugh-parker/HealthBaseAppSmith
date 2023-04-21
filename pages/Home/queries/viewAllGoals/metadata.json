@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "testfontenot",
+    "name": "viewAllGoals",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/f/fontenot"
+        "url": "web:4000/tw/viewAllGoals"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Food",
+    "pageId": "Home",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -47,7 +47,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Food_testfontenot",
+  "id": "Home_viewAllGoals",
   "deleted": false,
-  "gitSyncId": "643effb3022a640b686295b3_64404690a5bb07746698ce89"
+  "gitSyncId": "643f01175020067e542bac94_6441cfdf9f0b07156bb77cae"
 }

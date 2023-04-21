@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "viewExercisesByMuscleGroup",
+    "name": "getUserWorkoutPlans",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/tw/viewExercises/{{ chooseMuscleGroup.selectedOptionValue }}"
+        "url": "web:4000/tw/getUserWorkouts/{{lastName.inputText}}"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Record Workout",
+    "pageId": "Home",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -36,7 +36,7 @@
         "apiContentType": "none"
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "datasourceUrl"
@@ -46,14 +46,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      " chooseMuscleGroup.selectedOptionValue "
+      "lastName.inputText"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Record Workout_viewExercisesByMuscleGroup",
+  "id": "Home_getUserWorkoutPlans",
   "deleted": false,
-  "gitSyncId": "643f01175020067e542bac94_6441b26f9f0b07156bb77c8c"
+  "gitSyncId": "643f01175020067e542bac94_6441dcdd9f0b07156bb77cc1"
 }

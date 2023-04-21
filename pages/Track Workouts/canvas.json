@@ -99,7 +99,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "Workout History",
+                      "text": "Recently Created Workouts",
                       "key": "brjcrv1x4u",
                       "isDeprecated": false,
                       "rightColumn": 27,
@@ -146,19 +146,23 @@
                           "key": "tableData"
                         },
                         {
-                          "key": "primaryColumns.Date.computedValue"
+                          "key": "primaryColumns.DateOfEntry.computedValue"
                         },
                         {
-                          "key": "primaryColumns.Description.computedValue"
+                          "key": "primaryColumns.EntryID.computedValue"
                         },
                         {
-                          "key": "primaryColumns.Workout.computedValue"
+                          "key": "primaryColumns.UserID.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.WorkoutID.computedValue"
                         }
                       ],
                       "needsHeightForContent": true,
                       "leftColumn": 0,
                       "delimiter": ",",
                       "defaultSelectedRowIndex": 0,
+                      "showInlineEditingOptionDropdown": true,
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisibleFilters": true,
                       "isVisible": true,
@@ -190,7 +194,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1682021086110,
+                      "columnUpdatedAt": 1682035727175,
                       "originalBottomRow": 34,
                       "defaultSelectedRowIndices": [
                         0
@@ -198,9 +202,10 @@
                       "widgetName": "Table1",
                       "defaultPageSize": 0,
                       "columnOrder": [
-                        "Date",
-                        "Description",
-                        "Workout"
+                        "DateOfEntry",
+                        "EntryID",
+                        "UserID",
+                        "WorkoutID"
                       ],
                       "dynamicPropertyPathList": [
                         {
@@ -220,13 +225,13 @@
                       "dynamicTriggerPathList": [],
                       "borderWidth": "1",
                       "primaryColumns": {
-                        "Date": {
+                        "DateOfEntry": {
                           "allowCellWrapping": false,
                           "index": 0,
                           "width": 150,
-                          "originalId": "Date",
-                          "id": "Date",
-                          "alias": "Date",
+                          "originalId": "DateOfEntry",
+                          "id": "DateOfEntry",
+                          "alias": "DateOfEntry",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -241,24 +246,24 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Date",
+                          "label": "DateOfEntry",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Date\"]))}}",
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"DateOfEntry\"]))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
                         },
-                        "Description": {
+                        "EntryID": {
                           "allowCellWrapping": false,
                           "index": 1,
                           "width": 150,
-                          "originalId": "Description",
-                          "id": "Description",
-                          "alias": "Description",
+                          "originalId": "EntryID",
+                          "id": "EntryID",
+                          "alias": "EntryID",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
-                          "columnType": "text",
+                          "columnType": "number",
                           "textColor": "",
                           "textSize": "0.875rem",
                           "fontStyle": "",
@@ -270,24 +275,24 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Description",
+                          "label": "EntryID",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Description\"]))}}",
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"EntryID\"]))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
                         },
-                        "Workout": {
+                        "UserID": {
                           "allowCellWrapping": false,
                           "index": 2,
                           "width": 150,
-                          "originalId": "Workout",
-                          "id": "Workout",
-                          "alias": "Workout",
+                          "originalId": "UserID",
+                          "id": "UserID",
+                          "alias": "UserID",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
-                          "columnType": "text",
+                          "columnType": "number",
                           "textColor": "",
                           "textSize": "0.875rem",
                           "fontStyle": "",
@@ -299,10 +304,39 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Workout",
+                          "label": "UserID",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Workout\"]))}}",
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"UserID\"]))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "WorkoutID": {
+                          "allowCellWrapping": false,
+                          "index": 3,
+                          "width": 150,
+                          "originalId": "WorkoutID",
+                          "id": "WorkoutID",
+                          "alias": "WorkoutID",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "WorkoutID",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"WorkoutID\"]))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -315,7 +349,7 @@
                       "textSize": "0.875rem",
                       "widgetId": "zri937u5e0",
                       "minWidth": 450,
-                      "tableData": "{{userWorkoutHistory.data}}",
+                      "tableData": "{{allWorkoutHistory.data}}",
                       "label": "Data",
                       "searchKey": "",
                       "parentId": "sqdqgv7n0b",
@@ -431,8 +465,8 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Track Workouts_userWorkoutHistory",
-              "name": "userWorkoutHistory",
+              "id": "Track Workouts_allWorkoutHistory",
+              "name": "allWorkoutHistory",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [],

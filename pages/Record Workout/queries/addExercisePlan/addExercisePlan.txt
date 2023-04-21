@@ -1,0 +1,7 @@
+{
+  "CreatorID" : 4,
+  "NumSets" : {{numSets.inputText}},
+  "NumReps" : {{numReps.inputText}},
+  "Weight" : {{weight.inputText}},
+  "ExerciseID" : {{chooseExercise.selectedOptionValue}}
+}

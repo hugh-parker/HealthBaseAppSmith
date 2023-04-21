@@ -1,7 +1,7 @@
 {
   "pages": [
     {
-      "id": "Food",
+      "id": "Home",
       "isDefault": true
     },
     {
@@ -19,6 +19,10 @@
     {
       "id": "Record Meal",
       "isDefault": false
+    },
+    {
+      "id": "Workout Database",
+      "isDefault": false
     }
   ],
   "viewMode": false,
@@ -26,6 +30,9 @@
   "unreadCommentThreads": 0,
   "color": "#ECECEC",
   "unpublishedAppLayout": {
+    "type": "FLUID"
+  },
+  "publishedAppLayout": {
     "type": "FLUID"
   },
   "unpublishedCustomJSLibs": [],
